@@ -1,0 +1,11 @@
+username: "xxx@domain.com" #email address for user. Used in Auth with PAT_TOKEN from environment
+organization: "my-organization" # Azure DevOps Organization Name - PAT_TOKEN must have valid access
+project: "MyProject" # Azure DevOps Project Name - PAT_TOKEN must have valid access
+apiVersion: "5.0" # Version of Azure DevOps Restapi to Use - PAT_TOKEN must have valid access
+areaPath: MyProject\Frontend # Area Path to Work From - can be passed with -ap arg or ignored with --all
+browser: chrome #Command line switch for browser used - [iexplore|chome|firefox] - Browser launched with `ado open $ID`
+color: false #enable terminal colors | not working for all terminals
+tablefmt: simple #Any tablefmt supported by tabulate for output https://github.com/astanin/python-tabulate#table-format
+iteration: MyProject\Frontend\Iteration 1.1 # <optional> if set work items created with `ado create` will default to this iteration. Do not put in quotes "". Alternatively pass with `-it` flag
+hierarchy: false #enable hierarchy sorting and view for parent - child relationships (example below)
+LOGLEVEL: INFO # Valid LOGLEVEL (DEBUG|ERROR|INFO etc). Default is INFO
